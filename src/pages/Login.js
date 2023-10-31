@@ -18,9 +18,23 @@ export default function Login() {
   return (
     <>
       {loggedIn ? (
-        <div>
-          <h1>Welcome, {username}!</h1>
-          <p>You are now logged in.</p>
+        <div class="card">
+          <div class="image">
+            <img
+              className="h-20"
+              src="https://toolmate.co.in/assets/img/Memoji%20Profile%20Picture.svg"
+              alt="profile"
+            />
+          </div>
+          <div class="name">
+            <p>{username}</p>
+          </div>
+          <div class="username">
+            <p>@{username}</p>
+          </div>
+          <div class="work">
+            <p>Front-end developer 🧑‍💻</p>
+          </div>
         </div>
       ) : (
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
