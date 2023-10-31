@@ -16,6 +16,8 @@ import {
 } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -28,6 +30,9 @@ root.render(
         <Route path="/myapps" element={<Navigate to="/learn" />} />
         <Route path="/apps" element={<Navigate replace to="/learn" />} />
         <Route path="/dashboard" element={<App />} />
+        <Route path="/contact" element={<App />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
   </React.StrictMode>
