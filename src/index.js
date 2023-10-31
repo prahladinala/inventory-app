@@ -18,6 +18,8 @@ import reportWebVitals from "./reportWebVitals";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
+import Partner from "./pages/Partner";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -26,10 +28,10 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<App />} />
-        <Route path="/test" element={<h1>Test - But not a good approch</h1>} />
-        <Route path="/myapps" element={<Navigate to="/learn" />} />
-        <Route path="/apps" element={<Navigate replace to="/learn" />} />
-        <Route path="/dashboard" element={<App />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/partner">
+          <Route path="dashboard" element={<Partner />} />
+        </Route>
         <Route path="/contact" element={<App />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
