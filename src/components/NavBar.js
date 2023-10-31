@@ -21,14 +21,14 @@ const NavBar = () => {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link to="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Inventory</span>
               <img
                 className="h-12 w-auto"
                 src="https://toolmate.co.in/assets/logo/ToolmateLight.png"
                 alt=""
               />
-            </a>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -69,14 +69,14 @@ const NavBar = () => {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <Link to="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Inventory App</span>
                 <img
                   className="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                   alt=""
                 />
-              </a>
+              </Link>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -130,10 +130,10 @@ const NavBar = () => {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Check out the Inventory Now.{" "}
-              <a href="#" className="font-semibold text-indigo-600">
+              <Link to="#" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Check it out now <span aria-hidden="true">&rarr;</span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="text-center">
