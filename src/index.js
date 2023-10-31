@@ -15,17 +15,19 @@ import {
   useLocation,
 } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
+import Home from "./pages/Home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<App />} />
         <Route path="/test" element={<h1>Test - But not a good approch</h1>} />
         <Route path="/myapps" element={<Navigate to="/learn" />} />
         <Route path="/apps" element={<Navigate replace to="/learn" />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<App />} />
       </Routes>
     </Router>
   </React.StrictMode>
